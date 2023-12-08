@@ -2,6 +2,9 @@
 
 /**
  * main - splits strings
+ * @ac: number of arguments
+ * @argv: array of arguments
+ * @env: environment variables
  *
  * Return: Always 0
  */

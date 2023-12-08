@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * prompt - displays prompt
+ * prompt_x - displays prompt
+ * @buffer: getline buffer
  *
  * Return: -1 if end of line
 */
