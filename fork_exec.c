@@ -6,7 +6,7 @@
  * @env: environment variables
  * @buffer: getline buffer
  *
- * Return: -1 of error, 0 otherwise
+ * Return: 1 of error, 0 otherwise
 */
 
 int fork_exec(char **av, char **env, char *buffer)

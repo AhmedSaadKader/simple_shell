@@ -17,5 +17,6 @@ void exit_x(char *arg);
 int file_missing_error(char *arg, char *exec_name);
 int fork_exec(char **av, char **env, char *buffer);
 void free_buffer_av(char *buffer, char **av);
+char **which_x(char **av);
 
 #endif /* SIMPLE_SHELL */
