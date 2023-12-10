@@ -19,6 +19,11 @@ int main(int ac, char **argv, char **env)
 		if (prompt_x(&buffer) == -1)
 			return (-1);
 		get_command(buffer, av);
+		if (av[0] == NULL)
+		{
+			free_buffer_av(buffer, av);
+			continue;
+		}
 		exit_x(av[0]);
 		which_x(av);
 		if (file_missing_error(av[0], argv[0]) == -1)
