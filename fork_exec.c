@@ -12,6 +12,7 @@
 int fork_exec(char **av, char **env, char *buffer)
 {
 	pid_t pid;
+	int status;
 
 	pid = fork();
 	if (pid == -1)
@@ -27,7 +28,7 @@ int fork_exec(char **av, char **env, char *buffer)
 	else
 	{
 		free_buffer_av(buffer, av);
-		wait(NULL);
+		wait(&status);
 	}
-	return (0);
+	return (status);
 }

@@ -14,8 +14,8 @@ int file_missing_error(char *arg, char *exec_name)
 
 	if (stat(arg, &st) == -1)
 	{
-		printf("%s: No such file or directory\n", exec_name);
-		return (-1);
+		fprintf(stderr, "%s: 1: %s: not found\n", exec_name, arg);
+		return (127);
 	}
 	return (0);
 }
