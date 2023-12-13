@@ -26,6 +26,12 @@ int main(int ac, char **argv, char **env)
 			continue;
 		}
 		exit_x(av, buffer, status);
+		if (strcmp(av[0], "env") == 0)
+		{
+			free_buffer_av(buffer, av);
+			print_env_x(env);
+			continue;
+		}
 		if (getenv("PATH") != NULL)
 			which_x(av);
 		status = file_missing_error(av[0], argv[0]);
