@@ -17,7 +17,7 @@ int main(int ac, char **argv, char **env)
 	while (ac)
 	{
 		if (prompt_x(&buffer) == -1)
-			return (-1);
+			return (0);
 		get_command(buffer, av);
 		if (av[0] == NULL)
 		{
