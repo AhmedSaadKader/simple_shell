@@ -25,7 +25,7 @@ int main(int ac, char **argv, char **env)
 			free_buffer_av(buffer, av);
 			continue;
 		}
-		exit_x(av, buffer, status);
+		exit_x(av, buffer, status, argv[0]);
 		if (strcmp(av[0], "env") == 0)
 		{
 			free_buffer_av(buffer, av);
