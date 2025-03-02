@@ -53,7 +53,7 @@ A simple UNIX command-line interpreter (shell) written in C. This project is a b
 
     ./shell
 
-Usage
+##Usage
 
 Once the shell is running, you can enter commands just like in a regular shell. For example:
 bash
