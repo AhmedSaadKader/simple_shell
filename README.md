@@ -76,7 +76,7 @@ $ pwd
 /home/user
 $ exit
 
-Built-in Commands
+## Built-in Commands
 
 The shell supports the following built-in commands:
 
@@ -84,7 +84,7 @@ The shell supports the following built-in commands:
 
     exit: Exit the shell.
 
-File Structure
+## File Structure
 
 Here’s an overview of the files in the repository:
 File	Description
@@ -97,17 +97,17 @@ path.c	Resolves the full path of commands using the PATH environment variable.
 Makefile	Compilation rules for building the shell.
 Contributing
 
-Contributions are welcome! If you’d like to contribute, please follow these steps:
+## Contributions are welcome! If you’d like to contribute, please follow these steps:
 
     Fork the repository.
 
-    Create a new branch for your feature or bugfix.
+    Create a new branch for your feature.
 
     Commit your changes with clear and descriptive messages.
 
     Submit a pull request.
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 Acknowledgments
